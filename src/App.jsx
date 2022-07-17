@@ -1,13 +1,15 @@
 import './App.css'
 import 'flowbite'
 import NavBar from './Components/Navbar/Navbar'
+import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
 
 function App() {
 
   return (
-    <div className="App">
+    <>
       <NavBar />
-    </div>
+      <ItemListContainer title="Proximamente catalogo de productos" />
+    </>
   )
 }
 
