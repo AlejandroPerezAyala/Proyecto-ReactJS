@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer title="Proximamente catalogo de productos" />
+      <ItemListContainer title="Productos" />
     </>
   )
 }
