@@ -2,6 +2,8 @@ const products = [
     {
         id:1,
         title:"Vancouver",
+        category:"",
+        description:"",
         price:4500,
         image:"vancouver.png",
         stock:7
@@ -9,6 +11,8 @@ const products = [
     {
         id:2,
         title:"Cleo",
+        category:"",
+        description:"",
         price:3000,
         image:"cleo.png",
         stock:10
@@ -16,6 +20,8 @@ const products = [
     {
         id:3,
         title:"Denver",
+        category:"",
+        description:"",
         price:5000,
         image:"denver.png",
         stock:12
@@ -23,6 +29,8 @@ const products = [
     {
         id:4,
         title:"Krono",
+        category:"",
+        description:"",
         price:4000,
         image:"krono.png",
         stock:8
@@ -30,6 +38,8 @@ const products = [
     {
         id:5,
         title:"Celestina",
+        category:"",
+        description:"",
         price:3500,
         image:"celestina.png",
         stock:3
@@ -37,6 +47,8 @@ const products = [
     {
         id:6,
         title:"Luli",
+        category:"",
+        description:"",
         price:2000,
         image:"luli.png",
         stock:5
@@ -44,6 +56,8 @@ const products = [
     {
         id:7,
         title:"Pantu",
+        category:"",
+        description:"",
         price:2500,
         image:"pantu.png",
         stock:9
@@ -51,6 +65,8 @@ const products = [
     {
         id:8,
         title:"Munich",
+        category:"",
+        description:"",
         price:4000,
         image:"munich.png",
         stock:7
@@ -58,6 +74,8 @@ const products = [
     {
         id:9,
         title:"Rayo",
+        category:"",
+        description:"",
         price:3500,
         image:"rayo.png",
         stock:1
@@ -65,6 +83,8 @@ const products = [
     {
         id:10,
         title:"Mochi",
+        category:"",
+        description:"",
         price:3000,
         image:"mochi.png",
         stock:0
