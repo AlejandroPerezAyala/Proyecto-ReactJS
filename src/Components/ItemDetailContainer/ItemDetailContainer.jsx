@@ -1,12 +1,15 @@
 import { useState, useEffect } from 'react';
+import {useParams} from 'react-router-dom'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import products from '../utils/ItemsMock'
 
-const ItemDetailContainer = ({id}) => {
+const ItemDetailContainer = () => {
 
     const [item, setItem] = useState('');
+
+    const {id} = useParams();
     
-    const getItemByID = (id, productList) => productList.find((el) => (el.id === id));
+    const getItemByID = (id, productList) => productList.find((el) => (el.id == id));
 
 
     const getProductDetail = new Promise((resolve,reject) =>{
@@ -15,6 +18,7 @@ const ItemDetailContainer = ({id}) => {
         }, 2000) 
   } )
 
+  console.log(getItemByID(id, products))
   useEffect(() => {
     getProductDetail
     .then((res) => {

@@ -2,7 +2,7 @@ const products = [
     {
         id:1,
         title:"Vancouver",
-        category:"",
+        category:"zapatos",
         description:"",
         price:4500,
         image:"vancouver.png",
@@ -11,7 +11,7 @@ const products = [
     {
         id:2,
         title:"Cleo",
-        category:"",
+        category:"borcegos",
         description:"",
         price:3000,
         image:"cleo.png",
@@ -20,7 +20,7 @@ const products = [
     {
         id:3,
         title:"Denver",
-        category:"",
+        category:"zapatillas",
         description:"",
         price:5000,
         image:"denver.png",
@@ -29,7 +29,7 @@ const products = [
     {
         id:4,
         title:"Krono",
-        category:"",
+        category:"borcegos",
         description:"",
         price:4000,
         image:"krono.png",
@@ -38,7 +38,7 @@ const products = [
     {
         id:5,
         title:"Celestina",
-        category:"",
+        category:"zapatos",
         description:"",
         price:3500,
         image:"celestina.png",
@@ -47,7 +47,7 @@ const products = [
     {
         id:6,
         title:"Luli",
-        category:"",
+        category:"borcegos",
         description:"",
         price:2000,
         image:"luli.png",
@@ -56,7 +56,7 @@ const products = [
     {
         id:7,
         title:"Pantu",
-        category:"",
+        category:"zapatillas",
         description:"",
         price:2500,
         image:"pantu.png",
@@ -65,7 +65,7 @@ const products = [
     {
         id:8,
         title:"Munich",
-        category:"",
+        category:"borcegos",
         description:"",
         price:4000,
         image:"munich.png",
@@ -74,7 +74,7 @@ const products = [
     {
         id:9,
         title:"Rayo",
-        category:"",
+        category:"borcegos",
         description:"",
         price:3500,
         image:"rayo.png",
@@ -83,7 +83,7 @@ const products = [
     {
         id:10,
         title:"Mochi",
-        category:"",
+        category:"borcegos",
         description:"",
         price:3000,
         image:"mochi.png",
