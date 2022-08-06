@@ -18,7 +18,7 @@ const ItemDetailContainer = () => {
         }, 2000) 
   } )
 
-  console.log(getItemByID(id, products))
+  
   useEffect(() => {
     getProductDetail
     .then((res) => {

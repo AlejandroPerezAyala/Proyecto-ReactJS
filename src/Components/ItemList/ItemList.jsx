@@ -5,11 +5,10 @@ import { useParams } from 'react-router-dom'
 
 const ItemList = () => {
 
-  console.log(useParams());
+  
   const { category } = useParams();
   const productsFilter = products.filter((el) => el.category == category);
-  console.log(productsFilter);
-
+  
   const getProduct = new Promise((resolve,reject) =>{
         setTimeout(() => {
           if(category){

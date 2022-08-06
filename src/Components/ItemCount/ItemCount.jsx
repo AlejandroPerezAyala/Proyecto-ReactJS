@@ -23,7 +23,7 @@ const ItemCount = ({onAdd, initial, stock}) => {
                 <p className='bg-white text-black font-bold p-1 text-2xl text-center border-t-black border-y-2 border-b-black disabled:hover:cursor-not-allowed'>{count}</p>
                 <button className='bg-black text-white p-2 text-xl font-bold rounded-br-2xl rounded-tr-2xl' onClick={addCount} disabled={count == stock ? true : null}>+</button>
             </div>
-            <button className='bg-black text-white px-3 py-1 text-xl font-medium rounded-lg mt-2' onClick={() => onAdd(count)} disabled={stock == 0 ? true : null} >Comprar</button>
+            <button className='bg-black text-white px-3 py-1 text-xl font-medium rounded-lg mt-2' onClick={() => onAdd(count)} disabled={stock == 0 ? true : null} >Agregar al Carrito</button>
         </div>
     )
 }

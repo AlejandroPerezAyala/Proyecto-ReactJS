@@ -12,12 +12,12 @@ import { Navigation } from "swiper";
 
 const Header = () => {
   return (
-    <>
+    <header>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide><img src="/Header.svg" alt=""/></SwiperSlide>
         <SwiperSlide><img src="/Header2.svg" alt="" /></SwiperSlide>
       </Swiper>
-    </>
+    </header>
   )
 }
 
