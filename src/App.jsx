@@ -1,19 +1,27 @@
 import './App.css'
-import 'flowbite'
 import NavBar from './Components/Navbar/Navbar'
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import { useState } from 'react'
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
 import Cart from './Components/Cart/Cart'
+import ResponsiveMenu from './Components/ResponsiveMenu/ResponsiveMenu'
 
 function App() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => {
+    setIsOpen(!isOpen);
+  }
 
   return (
     <>
       <BrowserRouter>
-        <NavBar />
+        <NavBar openMenu={toggleOpen}/>
+        {isOpen && <ResponsiveMenu />}
         <Routes>
           <Route path='/' element={<Header/>}/>
           <Route path='/productos' element={<ItemListContainer title="Productos" />} />
