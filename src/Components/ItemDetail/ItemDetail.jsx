@@ -1,6 +1,6 @@
 import React from 'react'
 import ItemCount from '../ItemCount/ItemCount'
-import Swal from 'sweetalert2'
+
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -8,19 +8,7 @@ const ItemDetail = ({data}) => {
 
     const [qty, setQty] = useState(0);
 
-    const onAdd = (count) =>{
-
-        setQty(count);
-
-        Swal.fire({
-            position: 'top-end',
-            icon: 'success',
-            title: `Agregaste ${count} productos`,
-            showConfirmButton: false,
-            timer: 1500,
-            toast: true
-          })
-    }  
+    
 
 
   return (
@@ -35,7 +23,7 @@ const ItemDetail = ({data}) => {
                 <p className=' font-medium text-xl text-center'>Zapatos de cuero hermosos</p>
                 <p className=' font-medium text-xl text-center'>Precio: {`$ ${data.price}`}</p>
                 <div className='flex justify-center'>
-                    {qty > 0 ? <Link to='/cart'><button className='bg-black text-white px-3 py-1 text-xl font-medium rounded-lg mt-2 w-60'>Terminar compra</button></Link> : <ItemCount initial={1} stock={data.stock} onAdd={onAdd}/>}
+                    {qty > 0 ? <Link to='/cart'><button className='bg-black text-white px-3 py-1 text-xl font-medium rounded-lg mt-2 w-60'>Terminar compra</button></Link> : <ItemCount initial={1} stock={data.stock} setQty={setQty} productData={data}/>}
                 </div>
             </div>
             

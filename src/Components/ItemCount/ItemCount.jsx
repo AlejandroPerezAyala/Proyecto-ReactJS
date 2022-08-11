@@ -1,9 +1,12 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import React from 'react'
+import Swal from 'sweetalert2'
+import { CartContext } from "../Context/CartContext"
 
-const ItemCount = ({onAdd, initial, stock}) => {
+const ItemCount = ({setQty, initial, stock, productData}) => {
     const [count, setCount] = useState(initial);
 
+    const {addItem} = useContext(CartContext); 
 
     const addCount = () => { 
         setCount(count + 1);
@@ -13,6 +16,21 @@ const ItemCount = ({onAdd, initial, stock}) => {
         setCount(count - 1);
     }
 
+    const onAdd = (count) =>{
+
+        console.log("Agregar al carrito", productData);
+        setQty(count);
+        addItem(productData);
+        productData.cantidad = count;
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: `Agregaste ${count} productos`,
+            showConfirmButton: false,
+            timer: 1500,
+            toast: true
+          })
+    }  
 
 
     return (
