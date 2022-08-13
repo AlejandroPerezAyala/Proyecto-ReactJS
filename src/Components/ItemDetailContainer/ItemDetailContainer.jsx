@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import {useParams} from 'react-router-dom'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import products from '../utils/ItemsMock'
+import Loader2 from '../Loaders/Loader2';
 
 const ItemDetailContainer = () => {
 
     const [item, setItem] = useState('');
+    const [loader, setLoader] = useState(true);
 
     const {id} = useParams();
     
@@ -13,10 +15,14 @@ const ItemDetailContainer = () => {
 
 
     const getProductDetail = new Promise((resolve,reject) =>{
-        setTimeout(() => {
-            resolve(products)
-        }, 2000) 
+       
+          resolve(products)
+        
   } )
+
+  setTimeout(() => {
+    setLoader(false);
+  }, 1500);
 
   
   useEffect(() => {
@@ -31,7 +37,10 @@ const ItemDetailContainer = () => {
   
 
   return (
-    <ItemDetail data={item}/>
+    <>
+      {loader ? <Loader2 /> : <ItemDetail data={item}/>}
+    </>
+    
   )
 }
 

@@ -10,14 +10,14 @@ const ItemList = () => {
   const productsFilter = products.filter((el) => el.category == category);
   
   const getProduct = new Promise((resolve,reject) =>{
-        setTimeout(() => {
-          if(category){
-            resolve(productsFilter);
-          } else {
-            resolve(products)
-          }
+      
+        if(category){
+          resolve(productsFilter);
+        } else {
+          resolve(products)
+        }
             
-        }, 2000) 
+        
   } )
     
   const [productList, setProductList] = useState([])  
