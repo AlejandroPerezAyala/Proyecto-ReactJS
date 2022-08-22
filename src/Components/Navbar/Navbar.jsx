@@ -1,5 +1,5 @@
 import CartWidget from "../CartWidget/CartWidget"
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import './NavBar.css'
 
@@ -31,7 +31,7 @@ const NavBar = ({openMenu}) => {
                 </ul>
             </div>
             <div className="flex justify-center items-center">
-                <button className="text-white mr-5"><CartWidget/></button>
+                <Link to="/cart"><button className="text-white mr-5"><CartWidget/></button></Link>   
             </div>
         </nav>
     )

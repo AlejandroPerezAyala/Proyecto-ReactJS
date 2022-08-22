@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import {useParams} from 'react-router-dom'
 import ItemDetail from '../ItemDetail/ItemDetail'
-import products from '../utils/ItemsMock'
+import db from '../../FirebaseConfig';
 import Loader2 from '../Loaders/Loader2';
-
+import { doc, getDoc } from 'firebase/firestore';
 const ItemDetailContainer = () => {
 
     const [item, setItem] = useState('');
@@ -11,14 +11,15 @@ const ItemDetailContainer = () => {
 
     const {id} = useParams();
     
-    const getItemByID = (id, productList) => productList.find((el) => (el.id == id));
 
-
-    const getProductDetail = new Promise((resolve,reject) =>{
-       
-          resolve(products)
-        
-  } )
+    const getProductDetail = async () => {
+      const docRef = doc(db, "Productos", id);
+      const docSnapshot = await getDoc(docRef);
+      let product = docSnapshot.data();
+      product.id = docSnapshot.id;
+      return product
+    }
+  
 
   setTimeout(() => {
     setLoader(false);
@@ -26,9 +27,9 @@ const ItemDetailContainer = () => {
 
   
   useEffect(() => {
-    getProductDetail
+    getProductDetail()
     .then((res) => {
-        setItem(getItemByID(id, res))
+        setItem(res);
     })
     .catch((err) => {
         console.log("no se pudo cargar el detalle")
