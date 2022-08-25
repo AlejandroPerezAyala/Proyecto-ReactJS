@@ -36,11 +36,17 @@ const CartProvider = ({children}) => {
         setCartProducts(newCart);
     }
 
+    const getTotalPrice = () => {
+        let totalPrice = cartProducts.reduce((acc, product) => acc + (product.price * product.cantidad), 0);
+        return totalPrice;
+    }
+
     const data = {
         cartProducts,
         addItem,
         clear,
-        removeItem
+        removeItem,
+        getTotalPrice
     }
     return(
         <CartContext.Provider value={data}>

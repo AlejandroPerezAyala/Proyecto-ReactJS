@@ -9,6 +9,7 @@ import Footer from './Components/Footer/Footer'
 import Cart from './Components/Cart/Cart'
 import ResponsiveMenu from './Components/ResponsiveMenu/ResponsiveMenu'
 import CartProvider from './Components/Context/CartContext'
+import CartForm from './Components/CartForm/CartForm'
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
           <Route path='/productos/:id' element={<ItemDetailContainer />}/>
           <Route path='/category/:category' element={<ItemListContainer title="Productos" />} />
           <Route path='/cart' element={<Cart/>} />
+          <Route path='/cart/checkout' element={<CartForm/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
