@@ -13,3 +13,18 @@ Melisa shoes es un E-commerce de zapatos/Borcegos/Zapatillas el cual le desarrol
 
 ## GIF de navegabilidad
 
+![giphy](https://user-images.githubusercontent.com/60716672/188354178-d327594d-4ee7-4ef7-a51b-965992154dd3.gif)
+
+## Deploy
+
+Para el deploy/demo utilice [Netlify](https://www.netlify.com). Lo utilice en un proyecto anterior para el curso de JS. 
+
+Les dejo la demo para que la puedan ver y también la del proyecto de JS por si les interesa:
+
+[Melisa Shoes](https://melisashoes.netlify.app)
+
+[Clouds Accesorios](https://cloudsaccesorios.netlify.app)
+
+
+## Agradecimientos
+Muchas gracias a Christian que fue el profe del curso que le puso mucha garra y explica excelente, también a mi tutor Josué Oroya que gracias a sus correcciones y consejos pude realizar este proyecto correctamente.
