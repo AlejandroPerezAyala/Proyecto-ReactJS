@@ -23,7 +23,7 @@ const Contacts = () => {
         <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="flex bg-white w-full h-screen justify-center items-center">
                 <form className='flex flex-col text-xl items-center'>
-                    <div className='bg-white text-2xl border-collapse border-b-2 border-black pb-5'>
+                    <div className='bg-white text-2xl border-collapse border-b-2 border-black pb-5 text-center'>
                         <p>INGRESA TUS DATOS PARA QUE TE CONTACTEMOS</p>
                     </div>
                     <div className='flex flex-col pt-5'>
@@ -50,8 +50,8 @@ const Contacts = () => {
                     <button type='submit' className='bg-black text-white px-3 py-1 text-xl font-medium rounded-lg mt-2 w-60' onClick={submitContact}>Enviar</button>    
                 </form>
             </div>
-            <div className="bg-black object-cover">
-                <img className="object-cover h-screen" src="Yellow Clean Contact Us Instagram Post.svg" alt="" />
+            <div className="bg-black w-full">
+                <img className=" md:object-cover h-screen w-full" src="Yellow Clean Contact Us Instagram Post.svg" alt="" />
             </div>
         </div>
         
