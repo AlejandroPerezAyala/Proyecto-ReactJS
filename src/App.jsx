@@ -10,6 +10,7 @@ import Cart from './Components/Cart/Cart'
 import ResponsiveMenu from './Components/ResponsiveMenu/ResponsiveMenu'
 import CartProvider from './Components/Context/CartContext'
 import CartForm from './Components/CartForm/CartForm'
+import Contacts from './Components/Contacts/Contacts'
 
 function App() {
 
@@ -28,7 +29,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Header/>}/>
           <Route path='/productos' element={<ItemListContainer className='h-screen' title="Productos" />} />
-          <Route path='/contacto' element={<h1 className=' text-white text-3xl'>Contactos</h1>}/>
+          <Route path='/contacto' element={<Contacts/>}/>
           <Route path='/productos/:id' element={<ItemDetailContainer />}/>
           <Route path='/category/:category' element={<ItemListContainer title="Productos" />} />
           <Route path='/cart' element={<Cart/>} />
