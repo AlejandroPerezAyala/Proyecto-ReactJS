@@ -8,7 +8,7 @@ const NavBar = ({openMenu}) => {
         <nav className="bg-black text-xl flex justify-between">
             <div>
                 <Link to='/' className="flex justify-start sm:ml-5 object-cover">
-                    <img src="/src/Components/Navbar/img/MelisaShoes-logo (1).png" alt="" className="w-2/5"/>
+                    <img src="/MelisaShoes-logo.png" alt="" className="w-2/5"/>
                 </Link>
             </div>
             <button className="sm:hidden" onClick={openMenu}><svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" /></svg></button>
