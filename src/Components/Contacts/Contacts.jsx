@@ -21,7 +21,7 @@ const Contacts = () => {
             <p className="text-white text-3xl mb-5">Contactanos</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="flex bg-white w-full h-screen justify-center items-center">
+            <div className="flex bg-white w-full h-full justify-center items-center">
                 <form className='flex flex-col text-xl items-center'>
                     <div className='bg-white text-2xl border-collapse border-b-2 border-black pb-5 text-center'>
                         <p>INGRESA TUS DATOS PARA QUE TE CONTACTEMOS</p>
@@ -51,7 +51,7 @@ const Contacts = () => {
                 </form>
             </div>
             <div className="bg-black w-full">
-                <img className=" md:object-cover h-screen w-full" src="Yellow Clean Contact Us Instagram Post.svg" alt="" />
+                <img className=" md:object-cover w-full" src="Yellow Clean Contact Us Instagram Post.webp" alt="" />
             </div>
         </div>
         

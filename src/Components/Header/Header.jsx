@@ -14,8 +14,8 @@ const Header = () => {
   return (
     <header>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-        <SwiperSlide><img src="/Header.svg" alt=""/></SwiperSlide>
-        <SwiperSlide><img src="/Header2.svg" alt="" /></SwiperSlide>
+        <SwiperSlide><img src="/Header.webp" alt=""/></SwiperSlide>
+        <SwiperSlide><img src="/Header2.webp" alt="" /></SwiperSlide>
       </Swiper>
     </header>
   )
